@@ -1,0 +1,146 @@
+/* bagian 1 awal */
+
+:root {
+  --main-color: #2d2d2d;
+  --main-blue: #0046be;
+  --light-gray: #f6f8fb;
+  --dark-gray: #6c757d;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* no 1  */
+header {
+  background-color: var(--light-gray);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+/* no 2 */
+header img {
+  width: 260px;
+  height: 120px;
+}
+
+/* no 3 */
+.btn-primary {
+  background-color: var(--main-blue);
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+/* no 4 */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+img {
+  animation: bounce 2s;
+}
+
+/* no 5 */
+.btn-primary:hover {
+  background-color: #00a6ff;
+}
+
+/* steps */
+.steps {
+  display: grid;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 30px;
+  padding-bottom: 50px;
+}
+
+i {
+  font-size: 35px;
+  color: var(--main-blue);
+}
+
+.steps p {
+  font-size: 13px;
+  color: var(--dark-gray);
+  max-width: 350px;
+}
+
+/* review */
+.reviews {
+  padding: 30px;
+  border-top: 1px solid var(--dark-gray);
+}
+.reviews h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.review-list {
+  display: grid;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+}
+
+.review {
+  background-color: var(--light-gray);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+}
+
+.review h4 {
+  color: var(--main-blue);
+}
+
+/* cta */
+.cta {
+  background-color: var(--light-gray);
+  text-align: center;
+  padding: 30px;
+}
+
+.cta h2 {
+  font-size: 30px;
+}
+
+.cta p {
+  color: var(--dark-gray);
+
+  place-items: center;
+}
+
+/* footer */
+footer {
+  background-color: var(--main-blue);
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
