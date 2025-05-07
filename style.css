@@ -109,8 +109,8 @@ i {
 
 .review {
   background-color: var(--light-gray);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 12px;
