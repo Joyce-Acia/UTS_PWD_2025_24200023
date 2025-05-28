@@ -15,12 +15,12 @@
   <body>
     <header>
       <img src="logo.png" />
-      <h1>Temukan Karier Impianmu</h1>
+      <h1 id="header_h1">Temukan Karier Impianmu</h1>
       <p>
         Buat resume profesional, cari pekerjaan, dan kelola aplikasi Anda –
         semuanya dalam satu platform.
       </p>
-      <button class="btn-primary">Mulai Sekarang</button>
+      <button type="button" onclick="mulai()" id="button" onmousemove="mouse()" onmouseleave="leave()" class="btn-primary">Mulai Sekarang</button>
     </header>
 
 <!-- finish -->
@@ -86,11 +86,13 @@
         Bergabunglah dengan komunitas global pencari kerja dan buka peluang
         karier yang lebih luas hari ini.
       </p>
-      <button class="btn-primary">Gabung Gratis</button>
+      <button class="btn-primary" onclick="bikinButton()">Gabung Gratis</button>
     </section>
 
     <footer>
       <p>&copy; 2025 JobSeekr</p>
     </footer>
   </body>
+
+  <script src="script.js"></script>
 </html>
