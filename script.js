@@ -30,14 +30,19 @@ btn.addEventListener('mouseout', () => {
 
 function bikinButton() {
     const divBaru = document.createElement('div');
-    divBaru.innerHTML = "<button class='btn-primary'>Klik di Sini</button>";
+    divBaru.innerHTML = "<button class='btn-primary' id='cekPeluang'>Klik di Sini</button><p id='hasilPeluang'></p>";
     document.querySelector('.cta').append(divBaru);
-}   
 
-const estDiv = document.createElement("div");
-estDiv.innerHTML = '<button class="btn-primary" id="cekPeluang">Cek</button> <p id="hasilPeluang"></p>';
-document.querySelector('.cta').appendChild(estDiv);
-document.getElementById("cekPeluang").onclick = () => {
+    document.getElementById("cekPeluang").onclick = () => {
     const nilai = Math.floor(Math.random() * 51) + 50;
     document.getElementById("hasilPeluang").innerText = `Peluang Anda: ${nilai}%`;
-};
+
+}};   
+
+// const estDiv = document.createElement("div");
+// estDiv.innerHTML = '<button class="btn-primary" id="cekPeluang">Cek</button> <p id="hasilPeluang"></p>';
+// document.querySelector('.cta').appendChild(estDiv);
+// document.getElementById("cekPeluang").onclick = () => {
+//     const nilai = Math.floor(Math.random() * 51) + 50;
+//     document.getElementById("hasilPeluang").innerText = `Peluang Anda: ${nilai}%`;
+// };
