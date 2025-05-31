@@ -31,9 +31,19 @@ btn.addEventListener('mouseout', () => {
 function bikinButton() {
     const form = document.createElement('form');
     form.innerHTML =
-    '<input type="text" id="nama" placeholder="tulis nama anda" required>'
-    '<input type="text" id="work" placeholder="tulis pekerjaan impian anda" required>';
-    "<button class='btn-primary' id='cekPeluang'>Cek Peluangmu!</button><p id='hasilPeluang'></p>";
+    '<input type="text" id="nama" name="text" placeholder="tulis nama anda" required>';
+    '<input type="text" id="work" name="text" placeholder="tulis pekerjaan impian anda" required>';
+
+    form.addEventListener(), function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent the default Enter behavior
+      // You can add form validation here if needed
+      handleSubmit();
+    }
+    '<button class="btn-primary" id="cekPeluang">Cek Peluangmu!</button><p id="hasilPeluang"></p>';
+    }
+
+    // '<button class="btn-primary" id="cekPeluang">Cek Peluangmu!</button><p id="hasilPeluang"></p>';
     document.querySelector('.cta').append(form);
 
     // const divBaru = document.createElement('div');
