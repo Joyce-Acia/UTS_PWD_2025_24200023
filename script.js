@@ -29,9 +29,16 @@ btn.addEventListener('mouseout', () => {
 });
 
 function bikinButton() {
-    const divBaru = document.createElement('div');
-    divBaru.innerHTML = "<button class='btn-primary' id='cekPeluang'>Klik di Sini</button><p id='hasilPeluang'></p>";
-    document.querySelector('.cta').append(divBaru);
+    const form = document.createElement('form');
+    form.innerHTML =
+    '<input type="text" id="nama" placeholder="tulis nama anda" required>'
+    '<input type="text" id="work" placeholder="tulis pekerjaan impian anda" required>';
+    "<button class='btn-primary' id='cekPeluang'>Cek Peluangmu!</button><p id='hasilPeluang'></p>";
+    document.querySelector('.cta').append(form);
+
+    // const divBaru = document.createElement('div');
+    // divBaru.innerHTML = "<button class='btn-primary' id='cekPeluang'>Cek Peluangmu!</button><p id='hasilPeluang'></p>";
+    // document.querySelector('.cta').append(divBaru);
 
     document.getElementById("cekPeluang").onclick = () => {
     const nilai = Math.floor(Math.random() * 51) + 50;
